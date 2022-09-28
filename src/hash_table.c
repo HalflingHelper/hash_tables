@@ -194,3 +194,11 @@ void ht_delete(ht_hash_table *ht, const char *key)
     ht->count--;
 }
 
+void ht_print_hash_table(ht_hash_table* ht) {
+    for (int i = 0; i < ht->size; i++) {
+        ht_item* item = ht->items[i];
+        if (item != NULL && item != &HT_DELETED_ITEM) {
+            printf("%-15s%s\n", item->key, item->value);
+        }
+    }
+}

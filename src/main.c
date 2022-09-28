@@ -14,7 +14,9 @@ int main() {
 
     char* s = ht_search(my_ht, "second");
 
-    printf(s);
+    
+
+    ht_print_hash_table(my_ht);
 
     return 0;
 
