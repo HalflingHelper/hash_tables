@@ -2,7 +2,6 @@
 
 #include "hash_table.h"
 
-
 int main() {
     ht_hash_table* my_ht = ht_new();
 
@@ -14,10 +13,7 @@ int main() {
 
     char* s = ht_search(my_ht, "second");
 
-    
-
     ht_print_hash_table(my_ht);
 
     return 0;
-
 }
